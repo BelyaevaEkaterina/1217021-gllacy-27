@@ -31,7 +31,50 @@
             <li>Сливочное</li>
         </ul>
         <h1>Cливочное мороженое</h1>
-        <!--Пропущенный блок-->
+        <div>
+            <label for="sorting">Сортировка:</label>
+            <input type="text" id="sorting" name="sorting" list="sortingOptions">
+            <datalist id="sortingOptions">
+                <option value="по популярности"></option>
+                <option value="сначала недорогие"></option>
+                <option value="сначала дорогие"></option>
+                <option value="по жирности"></option>
+            </datalist>
+
+            <label for="price">Цена</label>
+            0 <input type="range" id="price" name="price" min="0" max="700" step="100"> 700
+
+            <p>Жирность:</p>
+            <div>
+                <label>
+                     <input type="radio" name="fat" value="0" checked> 0%
+                </label>
+                <label>
+                   <input type="radio" name="fat" value="10"> до 10%              
+                </label>
+                <label>
+                   <input type="radio" name="fat" value="30"> до 30%              
+                </label>
+                <label>
+                   <input type="radio" name="fat" value="more"> выше 30%              
+                </label>
+            </div>
+
+            <p>Наполнители:</p>
+            <div>
+                <input type="checkbox" name="filler1" id="choco">
+                <label for="choco">шоколадные</label>
+                <input type="checkbox" name="filler2" id="shugar">
+                <label for="shugar">сахарные присыпки</label>
+                <input type="checkbox" name="filler3" id="fruts">
+                <label for="fruts">фрукты</label>
+                <input type="checkbox" name="filler4" id="syrups">
+                <label for="syrups">сиропы</label>
+                <input type="checkbox" name="filler5" id="jams">
+                <label for="jams">джемы</label>                
+            </div>
+            <button>Применить</button>
+        </div>    
         <ul>
             <li>
                 <a href="#">
@@ -142,7 +185,15 @@
                 </a>
             </li>
         </ul>
-        <!--Пропущенный блок-->
+        <div>
+            <a href="#prev">Назад</a>
+            <a href="#1">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a href="#4">4</a>
+            <a href="#5">5</a>
+            <a class="next" href="#next">Вперёд</a>
+          </div>
     </main>
     <footer>
       <ul>
