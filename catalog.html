@@ -61,21 +61,24 @@
             <li><a href= "">Сливочное</a></li>
         </ul>
         <h1>Cливочное мороженое</h1>
-        <div>
-            <label for="sorting">Сортировка:</label>
-            <input type="text" id="sorting" name="sorting" list="sortingOptions">
-            <datalist id="sortingOptions">
-                <option value="по популярности"></option>
-                <option value="сначала недорогие"></option>
-                <option value="сначала дорогие"></option>
-                <option value="по жирности"></option>
-            </datalist>
-
-            <label for="price">Цена</label>
-            0 <input type="range" id="price" name="price" min="0" max="700" step="100"> 700
-
-            <p>Жирность:</p>
-            <div>
+        <form>
+            <h2 class="visually-hidden">Фильтры</h2>
+            <fieldset>
+                <label for = "sorting">Сортировка:</label>
+                <input type="text" id="sorting" name="sorting" list="sortingOptions">
+                <datalist id="sortingOptions">
+                    <option value="по популярности"></option>
+                    <option value="сначала недорогие"></option>
+                    <option value="сначала дорогие"></option>
+                    <option value="по жирности"></option>
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <label for = "price">Цена: 100 руб. - 500 руб.</label>
+                0 <input type="range" id="price" name="price" min="0" max="700" step="100"> 700
+            </fieldset>
+            <fieldset>
+                <p>Жирность:</p>
                 <label>
                     <input type="radio" name="fat" value="0" checked> 0%
                 </label>
@@ -88,34 +91,34 @@
                 <label>
                     <input type="radio" name="fat" value="more"> выше 30%              
                 </label>
-            </div>
-
-            <p>Наполнители:</p>
-            <ul>
-                <li>
-                    <input type="checkbox" name="filler1" id="choco">
-                    <label for="choco">шоколадные</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="filler2" id="shugar">
-                    <label for="shugar">сахарные присыпки</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="filler3" id="fruts">
-                    <label for="fruts">фрукты</label>  
-                </li>
-                <li>
-                    <input type="checkbox" name="filler4" id="syrups">
-                    <label for="syrups">сиропы</label> 
-                </li>
-                <li>
-                    <input type="checkbox" name="filler5" id="jams">
-                    <label for="jams">джемы</label>                
-                
-                </li>
-            </ul>
-            <button>Применить</button>
-        </div>    
+            </fieldset>
+            <fieldset>
+                <p>Наполнители:</p>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="filler1" id="choco">
+                        <label for="choco">шоколадные</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="filler2" id="shugar">
+                        <label for="shugar">сахарные присыпки</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="filler3" id="fruts">
+                        <label for="fruts">фрукты</label>  
+                    </li>
+                    <li>
+                        <input type="checkbox" name="filler4" id="syrups">
+                        <label for="syrups">сиропы</label> 
+                    </li>
+                    <li>
+                        <input type="checkbox" name="filler5" id="jams">
+                        <label for="jams">джемы</label>            
+                    </li>
+                </ul>
+            </fieldset>
+            <button type = "submit">Применить</button>
+        </form>    
         <ul>
             <li>
                 <a href="">
