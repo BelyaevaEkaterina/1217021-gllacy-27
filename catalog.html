@@ -67,21 +67,19 @@
         <form>
             <h2 class="visually-hidden">Фильтры</h2>
             <fieldset>
-                <legend>Сортировка</legend>
-                
-                <input type="text" name="sorting" list="sortingOptions">
-                <datalist id="sortingOptions">
-                    <option value="По популярности"></option>
-                    <option value="Сначала недорогие"></option>
-                    <option value="Сначала дорогие"></option>
-                    <option value="По жирности"></option>
-                </datalist>
+                <legend aria-label="Сортировка">Сортировка</legend>
+                <select name="sortingOptions">
+                    <option selected value="По популярности">По популярности</option>
+                    <option value="Сначала недорогие">Сначала недорогие</option>
+                    <option value="Сначала дорогие">Сначала дорогие</option>
+                    <option value="По жирности">По жирности</option>
+                </select>
             </fieldset>
             <fieldset>
-                <legend>Цена: </legend>
-                100
+                <legend aria-label="Цена">Цена:</legend>
+                <span>100</span>
                  руб. - 
-                500
+                <span>500</span>
                 руб.            
                 <div>
                     <div></div>
@@ -89,7 +87,7 @@
                 </div>
             </fieldset>
             <fieldset>               
-                <legend>Жирность:</legend>
+                <legend aria-label="Жирность">Жирность:</legend>
                 <label>
                     <input type="radio" name="fat" value="0" checked aria-label = "Жирность 0%"> 0%
                 </label>
@@ -104,7 +102,7 @@
                 </label>
             </fieldset>
             <fieldset>
-                <legend>Наполнители:</legend>
+                <legend aria-label="Наполнители">Наполнители:</legend>
                 <ul>
                     <li>
                         <input type="checkbox" name="filler1" id="choco">
