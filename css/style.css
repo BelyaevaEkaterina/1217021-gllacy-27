@@ -20,7 +20,7 @@ body {
     overflow: hidden;
   }
 
-  .all-forms{
+  .pop-up-forms{
     display: none;
   }
 
@@ -43,18 +43,23 @@ body {
 
 .site-navigation a,
 .user-navigation a,
-.sub-navigation a{
+.sub-navigation a,
+.button,
+.phone{
   color: #ffffff;
 }
 
 .site-navigation a:hover,
+.site-navigation a:focus,
 .user-navigation a:hover,
-.sub-navigation a:hover{
+.user-navigation a:focus,
+.sub-navigation a:hover,
+.sub-navigation a:focus{
   background-color: #fbded7;
 }
 
-.site-navigation a:focus,
-.user-navigation a:focus,
-.sub-navigation a:focus{
+.site-navigation a:active,
+.user-navigation a:active,
+.sub-navigation a:active{
   background-color:#f6b5a5;
 }
