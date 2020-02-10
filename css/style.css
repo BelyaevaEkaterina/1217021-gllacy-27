@@ -6,7 +6,7 @@ body {
   line-height: 22px;
   font-weight: 700;
   background-color:#8996a6;  
-  color: #ffffff;
+  color:#323232; 
 }
 
 .visually-hidden {
@@ -20,7 +20,7 @@ body {
     overflow: hidden;
   }
 
-  .pop-up-forms{
+  .hidden-forms{
     display: none;
   }
 
@@ -30,14 +30,25 @@ body {
 
   .main-navigation {
     line-height: 18px;
-    color: #ffffff;
-  
-    background-color:#8996a6;
+    color: #ffffff;      
+  }
+
+  .site-navigation{
+    text-decoration: underline;
+  }
+
+  .user-navigation{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;    
   }
 
   .site-navigation,
   .user-navigation,
-  .sub-navigation {
+  .sub-navigation,
+  .section-about,
+  .section-about ul,
+  .footer ul{
     list-style: none;
   }
 
@@ -45,7 +56,8 @@ body {
 .user-navigation a,
 .sub-navigation a,
 .button,
-.phone{
+.phone,
+.footer{
   color: #ffffff;
 }
 
@@ -55,11 +67,91 @@ body {
 .user-navigation a:focus,
 .sub-navigation a:hover,
 .sub-navigation a:focus{
-  background-color: #fbded7;
+  background-color: #ffffff;
+  color: #323232;
 }
 
-.site-navigation a:active,
-.user-navigation a:active,
-.sub-navigation a:active{
-  background-color:#f6b5a5;
+.section-about{
+  background-color: #9d8b84;
+  background-image: url("../img/waffle-background.jpg"); 
+}
+
+.section-about h2{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.section-about li{
+  font-weight: 400;
+}
+
+.new-in-blog{
+  background-color: #ffffff;
+  background-image: url("../img/strawberry-background.jpg"); 
+  background-repeat: no-repeat;  
+  font-weight: 500;
+}
+
+.new-in-blog a{    
+  font-size: 24px;
+  line-height: 30px; 
+  font-weight: 700;
+  color:#323232; 
+  text-decoration: underline;
+}
+
+.subscription{
+  background-image: url("../img/bg-post.svg");  
+  background-repeat: no-repeat; 
+  background-color: #f8f7f4;
+  color:#5a5a5a;
+  font-weight: 400;
+}
+
+.button{
+  font-size: 18px;
+  line-height: 24px; 
+  font-weight: 700;
+  color:  #ffffff;
+  text-align: center;
+  background: linear-gradient(to bottom, #e74a35, #f26843);
+  border: none;
+}
+
+.contacts{
+  font-size: 14px;
+  line-height: 20px; 
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+.contacts span{
+  font-size: 18px;
+  line-height: 24px; 
+  font-weight: 700;
+}
+
+.contacts a{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.footer a{
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color:#ffffff;
+}
+
+.footer-social{
+  opacity: 0.5;
+}
+
+.copiright{
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
 }
