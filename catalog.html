@@ -66,11 +66,11 @@
             <li><a href= "">Сливочное</a></li>
         </ul>
         <h1>Cливочное мороженое</h1>
-        <form>
+        <form class = "filters">
             <h2 class="visually-hidden">Фильтры</h2>
             <fieldset>
-                <legend>Сортировка</legend>
-                <select name="sortingOptions">
+                <legend class = "name-of-filter">Сортировка:</legend>
+                <select class = "sorting" name="sortingOptions">
                     <option selected value="По популярности">По популярности</option>
                     <option value="Сначала недорогие">Сначала недорогие</option>
                     <option value="Сначала дорогие">Сначала дорогие</option>
@@ -78,18 +78,19 @@
                 </select>
             </fieldset>
             <fieldset>
-                <legend>Цена:</legend>
+                <legend class = "name-of-filter">Цена:</legend>
                 <span>100</span>
                  руб. - 
                 <span>500</span>
                 руб.            
-                <div>
+                <div class = "price">
                     <div></div>
                     <div></div>
                 </div>
             </fieldset>
-            <fieldset>               
-                <legend>Жирность:</legend>
+            <fieldset>                            
+                <legend class = "name-of-filter">Жирность:</legend>
+                <div class = "fat">
                 <label>
                     <input type="radio" name="fat" value="0" checked aria-label = "Жирность 0%"> 0%
                 </label>
@@ -102,10 +103,11 @@
                 <label>
                     <input type="radio" name="fat" value="more" aria-label = "Жирность выше 30%"> выше 30%              
                 </label>
+                </div>
             </fieldset>
             <fieldset>
-                <legend>Наполнители:</legend>
-                <ul>
+                <legend class = "name-of-filter">Наполнители:</legend>
+                <ul class = "fillers">
                     <li>
                         <input type="checkbox" name="filler1" id="choco">
                         <label for="choco">Шоколадные</label>
@@ -128,7 +130,7 @@
                     </li>
                 </ul>
             </fieldset>
-            <button type = "submit">Применить</button>
+            <button class = "button-filters" type = "submit">Применить</button>
         </form>    
         <ul class="catalog-list">
             <li class="catalog-item">
@@ -228,27 +230,27 @@
                 </a>
             </li>
         </ul>
-        <ul>
-            <li>
-                <a href="">Назад</a>
+        <ul class = "pagination-list">
+            <li class = "pagination-item pagination-item-not-activ">
+                <a href="">&lt;</a>
             </li>
-            <li>
+            <li class = "pagination-item pagination-item-current">
                 <a href="">1</a> 
             </li>
-            <li>
+            <li class = "pagination-item">
                 <a href="">2</a> 
             </li>
-            <li>
+            <li class = "pagination-item">
                 <a href="">3</a>
             </li>
-            <li>
+            <li class = "pagination-item">
                 <a href="">4</a> 
             </li>
-            <li>
+            <li class = "pagination-item">
                 <a href="">5</a> 
             </li>
-            <li>
-                <a href="">Вперёд</a>
+            <li class = "pagination-item">
+                <a href="">&gt;</a>
             </li>
         </ul>
     </main>

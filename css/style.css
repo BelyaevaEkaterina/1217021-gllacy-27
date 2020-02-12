@@ -40,26 +40,26 @@ body {
   }
 
   .site-navigation,
-  .user-navigation,
-  .sub-navigation,
+  .user-navigation,  
   .section-about,
   .section-about ul,
   .footer ul{
     list-style: none;
   }
 
+  .user-navigation{
+    background-color:rgba(255, 255, 255, 0.2);
+  }
+
   .site-navigation a,
-  .user-navigation a,
-  .sub-navigation a{
+  .user-navigation a{
     color: #ffffff;
   }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
-.user-navigation a:focus,
-.sub-navigation a:hover,
-.sub-navigation a:focus{
+.user-navigation a:focus{
   background-color: #ffffff;
   color: #323232;
 }
@@ -274,11 +274,75 @@ main h1{
 .special-offer-raspberries{
   background-image: url("../img/raspberry-background.jpg");
   background-repeat: no-repeat; 
-  background-color: #f8f7f4;
+  background-color: rgb(97,24,46);
 }
 
 .special-offer-chocolate{
   background-image: url("../img/chocolate-background.jpg");
   background-repeat: no-repeat; 
-  background-color: #f8f7f4;
+  background-color: rgb(114,67,48);
 }
+
+.name-of-filter{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filters,
+.sorting{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;  
+  color: #ffffff; 
+}
+
+.filters .sorting:hover,
+.filters .sorting:focus{
+  color: #323232;
+}
+
+.sorting,
+.price,
+.fat,
+.fillers{  
+  background-color: rgba(255, 255, 255, 0.2);
+  list-style: none;
+}
+
+.button-filters{
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff; 
+}
+
+.button-filters:hover,
+.button-filters:focus,
+.button-filters:active{
+  background-color: #ffffff; 
+  color: #323232;  
+}
+
+.pagination-list{
+  list-style: none;
+}
+
+.pagination-item a{
+  color: #ffffff;
+}
+
+.pagination-item-not-activ a{
+  color:rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item-current a,
+.pagination-item a:active{
+  background-color: #ffffff; 
+  color: #323232;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus{
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff; 
+}
+
