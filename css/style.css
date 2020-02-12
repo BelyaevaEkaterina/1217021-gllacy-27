@@ -33,10 +33,6 @@ body {
     color: #ffffff;      
   }
 
-  .site-navigation{
-    text-decoration: underline;
-  }
-
   .user-navigation{
     font-size: 14px;
     line-height: 16px;
@@ -95,8 +91,7 @@ body {
 .new-in-blog a{    
   font-size: 24px;
   line-height: 30px; 
-  font-weight: 700; 
-  text-decoration: underline;
+  font-weight: 700;   
   color:#323232;
 }
 
@@ -159,8 +154,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  color:#ffffff;
-  text-decoration: underline;
+  color:#ffffff;  
 }
 
 .footer a:hover,
@@ -171,6 +165,10 @@ body {
 
 .footer-social{
   opacity: 0.5;
+}
+
+.footer li:first-child{
+  font-weight: 700;
 }
 
 .copiright{
@@ -216,21 +214,15 @@ body {
   color:#ffffff;
 }
 
-.bread-crumbs li{
-  text-decoration: underline;
-}
-
-.bread-crumbs li:last-child{
-  text-decoration: none;
-}
-
 main h1{
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
 
-.catalog-list{
+.catalog-list,
+.sliders,
+.special-offers{
   list-style: none;
 }
 
@@ -242,8 +234,7 @@ main h1{
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
-  text-align: center;
-  text-decoration: underline;
+  text-align: center;  
 }
 
 .catalog-item strong{
@@ -259,4 +250,35 @@ main h1{
 
 .catalog-item .button{
   visibility: hidden;
+}
+
+.sliders h2{
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.special-offers{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.special-offers h2{
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.special-offer-raspberries{
+  background-image: url("../img/raspberry-background.jpg");
+  background-repeat: no-repeat; 
+  background-color: #f8f7f4;
+}
+
+.special-offer-chocolate{
+  background-image: url("../img/chocolate-background.jpg");
+  background-repeat: no-repeat; 
+  background-color: #f8f7f4;
 }
