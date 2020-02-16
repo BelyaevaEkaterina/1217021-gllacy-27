@@ -5,8 +5,10 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
-  background-color:#849d8f;
+  background-color:#849d8f;  
   color:#ffffff;  
+  min-width: 1200px;
+  min-height: 2416px;
 }
 
 a {
@@ -349,4 +351,34 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff; 
 }
+
+/* ----- Сеточные стили ----- */
+
+.page-header{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 1200px;
+  position: absolute; 
+  margin: auto;
+}
+
+.main-navigation-wrapper{
+  margin-left: 27px;
+  margin-top: 9px;
+  display:flex;
+  justify-content: space-between;
+  min-width: 1200px;
+}
+
+.container{
+  flex-grow: 1;
+  display:flex;
+  justify-content: space-between;
+  min-width: 1019px;
+  margin-left: 24px;
+  margin-left: 27px;
+}
+
+
 
