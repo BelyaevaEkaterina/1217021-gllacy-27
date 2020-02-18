@@ -354,31 +354,17 @@ a {
 
 /* ----- Сеточные стили ----- */
 
-.page-header{
+.page-header .container{
   display:flex;
-  flex-direction: column;
-  align-items: flex-end;
-  min-width: 1200px;
-  position: absolute; 
-  margin: auto;
-}
-
-.main-navigation-wrapper{
-  margin-left: 27px;
   margin-top: 9px;
-  display:flex;
-  justify-content: space-between;
-  min-width: 1200px;
-}
-
-.container{
-  flex-grow: 1;
-  display:flex;
-  justify-content: space-between;
-  min-width: 1019px;
-  margin-left: 24px;
   margin-left: 27px;
+  width: 1200px;
 }
 
+.page-header-logo{
+  margin-right: 24px;
+}
 
-
+.user-navigation{
+  margin-left: auto;
+}
