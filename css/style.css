@@ -7,8 +7,6 @@ body {
   font-weight: 700;
   background-color:#849d8f;  
   color:#ffffff;  
-  min-width: 1200px;
-  min-height: 2416px;
 }
 
 a {
@@ -170,10 +168,14 @@ a {
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+  margin:0;
+  padding:0;
 }
 
 .about-us-advantages{
   list-style: none;
+  margin:0;
+  padding:0;
 }
   
 .about-us-advantages li{
@@ -354,17 +356,93 @@ a {
 
 /* ----- Сеточные стили ----- */
 
-.page-header .container{
-  display:flex;
-  margin-top: 9px;
-  margin-left: 27px;
+.main-navigation-wrapper {
   width: 1200px;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
 }
 
-.page-header-logo{
+.container {
+  width:100%;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.header-logo{
   margin-right: 24px;
+  padding-left: 27px;  
+  padding-top:9px; 
 }
 
-.user-navigation{
+.site-navigation {
+  width: 404px;
+  margin: 0;
+  padding: 0;   
+  padding-top:32px;
+}
+
+.user-navigation {
+  width: 245px;
+  margin-right: 27px;
   margin-left: auto;
+  padding: 0;
+  padding-top:23px;
+} 
+
+.phone{
+  margin-top:20px;
+  margin-right:26px;
+}
+
+.main-wrapper{
+  width: 1200px;
+  margin: 0 auto;  
+}
+
+.about-us{
+  margin: 0 27px;  
+  padding: 29px 21px;
+  min-height:306px;
+}
+
+.news-container{
+  display: flex;
+  justify-content:space-between;
+  margin:40px 27px 39px;
+  min-height: 220px;
+}
+
+.new-in-blog{
+  margin-right:26px;
+  min-width: 560px;
+}
+
+.footer-wrapper{
+  width: 1200px;
+  margin: 0 auto;
+ }
+
+.footer-wrapper .container {
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list{
+  width:185px;
+  margin-right:236px;
+  margin-left:28px;
+  margin-top:36px;
+}
+
+.useful-links{
+  margin-top:37px;
+}
+
+.copiright{
+  margin-left:auto;
+  margin-right: 27px;
+  margin-top:18px;
 }
