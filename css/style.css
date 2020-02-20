@@ -277,6 +277,10 @@ a {
 
 .bread-crumbs{
   list-style: none;
+  margin:0;
+  margin-top: 28px;
+  padding:0;
+  padding-left: 27px;
 }
 
 .bread-crumbs a{
@@ -284,12 +288,18 @@ a {
   line-height: 16px;
   font-weight: 400;
   color:#ffffff;
+  margin:0;
+  padding:0;
 }
 
 .main-title{
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
+  margin:0;
+  margin-top: 13px;
+  padding:0;
+  padding-left: 27px;
 }
 
 .name-of-filter{
@@ -398,7 +408,8 @@ a {
 
 .main-wrapper{
   width: 1200px;
-  margin: 0 auto;  
+  margin: 0 auto; 
+  padding:0;    
 }
 
 .about-us{
@@ -445,4 +456,21 @@ a {
   margin-left:auto;
   margin-right: 27px;
   margin-top:18px;
+}
+
+.catalog-list{
+  display:flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.catalog-item{
+  width: 267px;
+  margin-left: 26px;
+  margin-top: 41px;
+  min-height: 321px;
 }
