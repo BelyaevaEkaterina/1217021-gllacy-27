@@ -208,10 +208,23 @@ a {
 
 .subscription{
   background-image: url("../img/bg-post.svg");  
-  background-repeat: no-repeat; 
-  background-color: #f8f7f4;
+  background-repeat: no-repeat;   
   color:#5a5a5a;
   font-weight: 400;
+  margin:0;
+  padding:0;
+}
+
+.subscription-background{
+  width: 549px;
+  height: 211px;
+  background-color: #f8f7f4;
+  margin:0;
+  padding:0;  
+  position:relative;
+
+  left:6px;
+  top:-11px;
 }
 
 .contacts{
@@ -448,31 +461,6 @@ a {
   min-height:220px;  
 }
 
-.new-in-blog{
-  margin-right:auto;  
-}
-
-.new-in-blog p{
-  margin-left:20px;
-  margin-top: 26px;
-}
-
-.link-to-article{
-  margin-left:20px;
-  margin-top: 13px;
-}
-
-.subscription p{
-  margin-left:21px;
-  margin-top: 33px;
-  margin-right: 22px;
-}
-
-.subscription form{
-  margin-left:20px;
-  margin-top: 38px;
-}
-
 .page-footer{
   width: 100%;
   min-height:103px;
@@ -481,8 +469,7 @@ a {
 .social-list{
   margin:0;  
   margin-top:36px;
-  padding:0;
-    
+  padding:0;    
   display:flex;
 }
 
