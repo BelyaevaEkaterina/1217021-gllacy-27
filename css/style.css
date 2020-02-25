@@ -192,13 +192,22 @@ a {
   background-repeat: no-repeat;  
   font-weight: 500;
   color:#323232; 
+  margin:0;
+  padding:0;
 }
 
-.new-in-blog a{    
+.new-in-blog p{
+  margin:0;
+  padding:0;
+}
+
+.link-to-article{    
   font-size: 24px;
   line-height: 30px; 
   font-weight: 700;   
   color:#323232;
+  margin:0;
+  padding:0;
 }
 
 .new-in-blog a:hover,
@@ -213,18 +222,6 @@ a {
   font-weight: 400;
   margin:0;
   padding:0;
-}
-
-.subscription-background{
-  width: 549px;
-  height: 211px;
-  background-color: #f8f7f4;
-  margin:0;
-  padding:0;  
-  position:relative;
-
-  left:6px;
-  top:-11px;
 }
 
 .contacts{
