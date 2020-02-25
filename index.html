@@ -58,15 +58,10 @@
           </p>   
       </div>        
     </header>
-    <main  class = "container">      
+    <main>      
+      <div class="container">
       <h1 class = "visually-hidden">Магазин мороженого «Глейси»</h1>      
-      <div class="slider hidden-elements">
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
-        <label for="btn-1"></label>
-        <label for="btn-2"></label>
-        <label for="btn-3"></label>
+      <div class="slider">        
         <ul class ="sliders">
           <li>
             <img src="img/slider-1.png" width="647" height="584" alt="Хрустящие вафельные рожки с бежево-коричневым и бело-розовым мороженым">
@@ -81,9 +76,15 @@
             <h2 class="slider-title">Пломбир с помадкой и клубничный щербет</h2>
           </li>    
         </ul>        
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
         <a class = "button" href="">Давайте оба!</a>        
       </div>
-      <ul class = "special-offers hidden-elements">
+      <ul class = "special-offers">
         <li class = "special-offer-raspberries">
           <h2 class="special-offer-title">Малинка даром!</h2>            
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -94,7 +95,7 @@
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class = "button" href="">Хочу шоколадки!</a>
         </ul>
-      <ul class="catalog-list hidden-elements">
+      <ul class="catalog-list">
         <li class="catalog-item">
             <a href="">
                 <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное мороженое с яроко выраженным апельсиновым вкусом">
@@ -146,7 +147,7 @@
         </div>
         <div class = "subscription">  
           <div class="subscription-background" >   
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form action="https://echo.htmlacademy.ru" method="post">
               <label for="email-for-subscription" class="visually-hidden">E-mail для подписки</label>
               <input id="email-for-subscription" type="email" name="email-for-subscription" placeholder="email@example.com">
@@ -155,15 +156,18 @@
           </div>  
         </div>
       </div>
-      <section class = "contacts hidden-elements">
+    </div>
+      <section class = "contacts">
         <h2 class = "visually-hidden">Расположение - как добраться</h2>
-        <img src = "img/map.jpg" alt = "Карта с адресом магазина Санкт-Петербург, ул. Большая Конюшенная 19/8">             
+        <img class="map" src = "img/map.jpg" alt = "Карта с адресом магазина Санкт-Петербург, ул. Большая Конюшенная 19/8">   
+        <div class="contacts-sidebar">         
         <p>Адрес главного офиса и офлайн-магазина:<br>
         <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
         <p>Для заказов по телефону:<br>
         <a href="tel:+78124502515">8 812 450-25-25</a><br>
         (с 10 до 20 ежедневно)</p>
-        <button class = "button">Форма обратной связи</button>        
+        <button class = "button">Форма обратной связи</button>     
+        </div>    
       </section>
     </main>
     <footer class = "page-footer">
@@ -190,11 +194,11 @@
               </a>
             </li> 
           </ul>
-          <ul class="useful-links">
-            <li class="link-for-suppliers useful-links-item"><a  href="">Для поставщиков</a></li>
-            <li class="useful-links-item"><a href="">Наши документы</a></li>
-            <li class="useful-links-item"><a href="">О производстве</a></li>                  
-            <li class="link-ecology useful-links-item"><a href="">Экологические стандарты</a></li>
+          <ul class="footer-nav-list">            
+            <li class="footer-nav-item"><a class="bold-link" href="">Для поставщиков</a></li>
+            <li class="footer-nav-item"><a href="">Наши документы</a></li>
+            <li class="footer-nav-item"><a href="">О производстве</a></li>                  
+            <li class="footer-nav-item"><a href="">Экологические стандарты</a></li>
           </ul>
           <div class = "copiright">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
