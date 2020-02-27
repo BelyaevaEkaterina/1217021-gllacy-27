@@ -71,21 +71,26 @@ a {
   font-weight: 700;
 }
 
-.sliders{
+.slider {
+  position: relative;  
+  padding-top: 321px;  
+  text-align: center;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;  
   list-style: none;
 }
 
-.sliders img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .slider-title{
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+
   font-size: 60px;
   line-height: 60px;
-  font-weight: 700;
-  text-align: center;
+  font-weight: 700;  
 }
 
 .button{
