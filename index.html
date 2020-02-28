@@ -8,6 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle"> 
+    <div class="site-wrapper">     
     <header class="page-header">
       <div class="container">
         <nav class="main-navigation">  
@@ -58,13 +62,9 @@
           </p>   
       </div>        
     </header>
-    <main class="main-page">      
+    <main>           
       <div class="container">
-      <h1 class = "visually-hidden">Магазин мороженого «Глейси»</h1>     
-      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-      <input class="visually-hidden" type="radio" id="product-3" name="toggle"> 
-      
+        <h1 class = "visually-hidden">Магазин мороженого «Глейси»</h1>                 
       <div class="slider"> 
         <div class="slider-controls">
           <label for="product-1">Первый</label>
@@ -73,15 +73,15 @@
         </div>     
         <ul class ="slider-list">
           <li class="slider-item slide" id="slide1">
-            <h2 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h2>
+            <h2 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
             <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
           <li class="slider-item slide" id="slide2">
-            <h2 class="slider-title">Шоколадный пломбир и лимонный сорбет</h2>
+            <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет</h2>
             <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
           <li class="slider-item slide" id="slide3">
-            <h2 class="slider-title">Пломбир с помадкой<br>и клубничный щербет</h2>
+            <h2 class="slide-title">Пломбир с помадкой<br>и клубничный щербет</h2>
             <a class="button slide-button" href="#">Давайте оба!</a>
           </li>          
         </ul>                      
@@ -211,6 +211,7 @@
           </div>        
       </div>
     </footer> 
+    </div>
     <form class = "hidden-elements" action="https://echo.htmlacademy.ru" method="post">
       <p>Мы обязательно вам ответим!</p>
       <label for="user-name" class="visually-hidden">Логин</label>

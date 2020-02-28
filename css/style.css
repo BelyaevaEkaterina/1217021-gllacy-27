@@ -20,13 +20,20 @@ a {
   margin: -1px;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
 .hidden-elements{
   display: none;
 }
+
+.container {
+  width:1146px;
+  margin:auto;
+  padding:0 27px;       
+}
+
 
 .main-navigation {
   line-height: 18px;
@@ -71,20 +78,43 @@ a {
   font-weight: 700;
 }
 
-.main-page{
+.site-wrapper {
   min-width: 940px;
   background-color: #849d8f;
-  background-image: url("img/slider-item1.png");
+  background-image: url("img/slider-1.png");
   background-repeat: no-repeat;
   background-position: top center;  
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+
+  min-height: 100vh;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("img/slider-2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("img/slider-3.png");
 }
 
 .slider {
   position: relative;
+
+  padding-top: 321px;
+ 
   text-align: center;
+  color: #ffffff;
 }
 
- .slider-list {
+.slider-list {
   margin: 0;
   padding: 0;
   
@@ -95,26 +125,30 @@ a {
   display: none;
 }
 
-.slider-title{
-  font-size: 60px;
-  line-height: 60.5px;
-  font-weight: 700;
-  text-align: center;
+.slide-title {
   width: 670px;
   margin: 0 auto;
+  margin-bottom: 27px;
+  
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
 }
 
 .button{
+  display: inline-block;
+  padding: 12px 44px;
   font-size: 18px;
   line-height: 24px; 
   font-weight: 700;
   color:  #ffffff;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
+  text-decoration: none;
 
   background: #f26843;
-  background: linear-gradient(to bottom, #e74a35, #f26843);
+  background: linear-gradient(to bottom, #f26843, #e74a35);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 
   border-radius: 50px;  
@@ -123,24 +157,23 @@ a {
   cursor: pointer;
 }
 
-.slide-button{
-  display: inline-block;
+.slide-button{  
   padding: 17px 43px 16px 41px;
-  width: 280px;
-  height: 64px;
+  width: 196px;
+  height: 31px;
   font-size: 32px;
   line-height: 44px; 
 }
 
 .button:hover,
 .button:focus{
-  background: linear-gradient(to bottom, #e74a35, #f26843), rgba(255, 255, 255, 0.2);
+  background: linear-gradient(to bottom, #f26843, #e74a35), rgba(255, 255, 255, 0.2);
   background-blend-mode: overlay;
   box-shadow: 0 2px 2px #ac1000;
 }
 
 .button:active{
-  background: linear-gradient(to bottom, #e74a35, #f26843), rgba(0, 0, 0, 0.07);
+  background: linear-gradient(to bottom, #f26843, #e74a35), rgba(0, 0, 0, 0.07);
   background-blend-mode: overlay;
   box-shadow: 0 2px 2px #942718;
 }
@@ -154,7 +187,7 @@ a {
   font-size: 0;
 }
 
-.slider-controls label{
+.slider-controls label {
   display: inline-block;
   width: 17px;
   height: 17px;
@@ -168,30 +201,30 @@ a {
   cursor: pointer;
 }
 
-#product-1:checked ~ .main-page {
+#product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("img/slider-1.png");
 }
 
-#product-2:checked ~ .main-page {
+#product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("img/slider-2.png");
 }
 
-#product-3:checked ~ .main-page {
+#product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("img/slider-3.png");
 }
 
-#product-1:checked ~ .main-page #slide1,
-#product-2:checked ~ .main-page #slide2,
-#product-3:checked ~ .main-page #slide3 {
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
   display: block;
 }
 
-#product-1:checked ~ .main-page label[for="product-1"],
-#product-2:checked ~ .main-page label[for="product-2"],
-#product-3:checked ~ .main-page label[for="product-3"] {
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
 
@@ -494,14 +527,6 @@ a {
   width:100%;    
 }
 
-.container {
-  width:1146px;
-  margin:auto;
-  padding:0 27px; 
-  display:flex; 
-  flex-wrap: wrap;  
-}
-
 .page-header .container{
   justify-content: flex-end;    
 }
@@ -572,9 +597,14 @@ a {
   min-height:220px;  
 }
 
-.page-footer{
+.page-footer{ 
   width: 100%;
   min-height:107px;
+}
+
+.page-footer .container{
+  display: flex;
+  flex-direction: row;
 }
 
 .social-list{
