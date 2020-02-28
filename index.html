@@ -58,9 +58,13 @@
           </p>   
       </div>        
     </header>
-    <main>      
+    <main class="main-page">      
       <div class="container">
-      <h1 class = "visually-hidden">Магазин мороженого «Глейси»</h1>      
+      <h1 class = "visually-hidden">Магазин мороженого «Глейси»</h1>     
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-3" name="toggle"> 
+      
       <div class="slider"> 
         <div class="slider-controls">
           <label for="product-1">Первый</label>
@@ -77,21 +81,9 @@
             <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
           <li class="slider-item slide" id="slide3">
-            <h2 class="slider-title">Пломбир с помадкой и клубничный щербет</h2>
+            <h2 class="slider-title">Пломбир с помадкой<br>и клубничный щербет</h2>
             <a class="button slide-button" href="#">Давайте оба!</a>
-          </li>
-          <li>
-            <img src="img/slider-1.png" width="647" height="584" alt="Хрустящие вафельные рожки с бежево-коричневым и бело-розовым мороженым">
-            
-          </li>
-          <li>
-            <img src="img/slider-2.png" width="647" height="584" alt="Хрустящие вафельные рожки с коричневым и бледно-желтым мороженым">
-            
-          </li>
-          <li>
-            <img src="img/slider-3.png" width="647" height="584" alt="Хрустящие вафельные рожки с ярко-розовым и белым с шоколадной поливкой мороженым">
-            
-          </li>    
+          </li>          
         </ul>                      
       </div>
       <ul class = "special-offers">
@@ -104,7 +96,8 @@
           <h2 class="special-offer-title">Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class = "button" href="">Хочу шоколадки!</a>
-        </ul>
+        </li>  
+      </ul>
       <ul class="catalog-list">
         <li class="catalog-item">
             <a href="">
