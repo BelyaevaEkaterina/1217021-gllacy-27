@@ -47,14 +47,20 @@ a {
 .user-navigation{
   font-size: 14px;
   line-height: 16px;
-  font-weight: 500;  
-  background-color:rgba(255, 255, 255, 0.2);    
+  font-weight: 500;
+  
+  margin:0;
+  padding:0;
+
   list-style: none; 
 }
 
-.site-navigation a,
-.user-navigation a{
+.site-navigation-link,
+.user-navigation-link{
   color: #ffffff;
+  padding:0;
+  margin:0;
+  text-decoration: none;
 }
 
 .site-navigation a:hover,
@@ -78,16 +84,13 @@ a {
   font-weight: 700;
 }
 
-.site-wrapper {
-  min-width: 940px;
+/*.site-wrapper {
   background-color: #849d8f;
-  background-image: url("img/slider-1.png");
+  background-image: url("../img/slider-1.png");
   background-repeat: no-repeat;
-  background-position: top center;  
+  background-position: center 83px ;  
 
-  transition: background-image 0.5s ease, background-color 0.5s ease;
-
-  min-height: 100vh;
+  transition: background-image 0.5s ease, background-color 0.5s ease; 
 }
 
 .site-wrapper::before,
@@ -98,20 +101,20 @@ a {
 }
 
 .site-wrapper::before {
-  background-image: url("img/slider-2.png");
+  background-image: url("../img/slider-2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("img/slider-3.png");
+  background-image: url("../img/slider-3.png");
 }
 
 .slider {
   position: relative;
 
-  padding-top: 321px;
+  padding-top: 280px;
  
   text-align: center;
-  color: #ffffff;
+  color: #ffffff
 }
 
 .slider-list {
@@ -122,29 +125,33 @@ a {
 }
 
 .slide {
-  display: none;
+  display: none;  
 }
 
 .slide-title {
+ 
   width: 670px;
   margin: 0 auto;
-  margin-bottom: 27px;
-  
+  padding-bottom:27px;
+
+ 
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
 }
+*/
 
 .button{
+  
   display: inline-block;
-  padding: 12px 44px;
+  vertical-align: middle;
   font-size: 18px;
   line-height: 24px; 
   font-weight: 700;
   color:  #ffffff;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   text-align: center;
-  vertical-align: top;
+ 
   text-decoration: none;
 
   background: #f26843;
@@ -155,14 +162,6 @@ a {
   border: none;
 
   cursor: pointer;
-}
-
-.slide-button{  
-  padding: 17px 43px 16px 41px;
-  width: 196px;
-  height: 31px;
-  font-size: 32px;
-  line-height: 44px; 
 }
 
 .button:hover,
@@ -177,10 +176,16 @@ a {
   background-blend-mode: overlay;
   box-shadow: 0 2px 2px #942718;
 }
+/*
+.slide-button{  
+  padding:11px 43px 11px 41px;
+  font-size: 32px;
+  line-height: 44px; 
+}
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 22px;
   left: 0;
   z-index: 20;
   
@@ -203,17 +208,17 @@ a {
 
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
-  background-image: url("img/slider-1.png");
+  background-image: url("../img/slider-1.png");
 }
 
 #product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
-  background-image: url("img/slider-2.png");
+  background-image: url("../img/slider-2.png");
 }
 
 #product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
-  background-image: url("img/slider-3.png");
+  background-image: url("../img/slider-3.png");
 }
 
 #product-1:checked ~ .site-wrapper #slide1,
@@ -227,7 +232,7 @@ a {
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
-
+*/
 .special-offers{
   font-size: 18px;
   line-height: 22px;
@@ -235,6 +240,10 @@ a {
   list-style: none;
   margin:0;
   padding:0;
+}
+
+.special-offer{
+  border-radius: 15px;
 }
 
 .special-offer-title{
@@ -295,6 +304,10 @@ a {
   background-color: #9d8b84;
   background-image: url("../img/waffle-background.jpg"); 
   color: #323232;
+  border-radius:15px;
+  margin:0;
+  padding:0;
+  background-color:wheat;
 }
 
 .about-us-title{
@@ -302,21 +315,64 @@ a {
   line-height: 30px;
   font-weight: 500;
   margin:0;
+  padding:0; 
   margin-left:21px;
-  margin-top:26px; 
-  padding:0;
+  padding-top:26px;
+  
 }
 
 .about-us-advantages{
   list-style: none;
   margin:0;
   padding:0;
+  display:flex;
+  justify-content: flex-start;
+  padding-left:20px;
+  padding-right:34px;
+
+}
+
+.about-us-advantages-item:nth-child(2n){
+  margin-left: 36px;
 }
   
 .about-us-advantages-item{
   font-weight: 400;
-  margin-left:77px;
-  margin-top:23px; 
+  display:flex;
+  justify-content: space-between;
+  flex-grow:1;
+  margin:0;
+  padding:0; 
+  margin-top:23px;  
+}
+
+.about-us-advantages-item:first-child::before{
+  content:url("../img/ice-cream.svg");
+  position:relative;
+  bottom:15px;
+  margin-right:8px;
+}
+
+.about-us-advantages-item:nth-child(2)::before{
+  content:url("../img/cow.svg");
+  position:relative;
+  bottom:15px;
+  margin-right:8px;
+  
+}
+
+.about-us-advantages-item:nth-child(3)::before{
+  content:url("../img/eco.svg");
+  position:relative;
+  bottom:15px;
+  margin-right:8px;
+}
+
+.about-us-advantages-item:last-child::before{
+  content:url("../img/thermometer.svg");
+  position:relative;
+  bottom:15px;
+  margin-right:8px;
 }
 
 .new-in-blog{
@@ -539,34 +595,74 @@ a {
 }
 
 .header-logo{
+  margin:0;
+  padding:0;
   margin-top: 9px;
 }
 
 .site-navigation {
+  margin:0;
+  padding:0;
+  margin-top:31px;
   margin-left:24px;
-  margin-top:32px;
-  display:flex;
-  
+  display:flex;   
 }
+
 .site-navigation-item{
-  margin-right: 32px;
+  margin-right: 28px;  
 }
 
 .user-navigation {
   margin-left:auto;
   margin-top:23px;
   display:flex;
+  justify-content: space-between;
+  min-width: 255px;
+  height: 32px;
 }                                                                                                                        
 
 .user-navigation-item{
   margin-left: 9px;
   padding:0;
+  border-radius: 30px;
+  background-color:rgba(255, 255, 255, 0.2);  
+  margin-left:10px;
+  flex-grow:1;
+}
+
+.user-navigation-item:first-child{  
+  flex-grow:0;
+}
+
+.user-navigation-link span{
+  position:relative;
+  bottom: 13px;
+  left:6px;
+}
+
+.user-navigation-link svg{
+  position:relative;
+  bottom:1px;
+  left:9px;
+  margin:7px;
+}
+
+.user-navigation-item:first-child svg{
+  margin:8px;
+  position:relative;
+  bottom:1px;
+  left:0px;
 }
 
 .phone{
   align-self: center;
   margin:0;
-  text-align:right;
+  text-align:right; 
+}
+
+.phone a{
+  position:relative;
+  top:4px;
 }
 
 .about-us{
@@ -682,7 +778,7 @@ a {
   width: 100%;
   display:flex;
   justify-content: space-between;
-  margin-top:36px;
+  margin-top:40px;
 }
 
 .contacts{
@@ -739,10 +835,3 @@ a {
   margin-right:0;
 }
 
-.slider .button{ 
-  width:280px;
-  height:64px;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-}
