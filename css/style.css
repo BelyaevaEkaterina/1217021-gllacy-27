@@ -159,6 +159,39 @@ a {
   fill: #323232;
 }
 
+.search-form-wrapper{
+  position:absolute;
+  right:0px;
+  top:31px;
+  width:341px;
+  height:84px;  
+  padding-top:6px;
+  display:none;
+}
+
+.search-form{
+  background-color:#f8f7f4;
+  border-radius:5px;
+  margin:0;
+  padding:0;
+  padding:20px 15px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.search-form input{
+  height: 44px;
+  font-size: 14px;
+  margin:0;
+  padding:0; 
+  width: 100%;
+  box-sizing:border-box;
+  padding: 15px;  
+}
+
+.user-navigation-item:hover .search-form-wrapper{
+  display: block; 
+}
+
 .login-form-wrapper{
   position:absolute;
   right:0px;
@@ -169,8 +202,7 @@ a {
   height:214px;
 }
 
-.login-form{ 
-  
+.login-form{  
   background-color:#f8f7f4;
   border-radius:5px;
 
@@ -1083,7 +1115,6 @@ padding-right:5px;
 }
 
 .footer-nav-item:first-child::before{
-  display:block;
   content: url("../img/heart.svg");
   width:15px;
   height:13px;
