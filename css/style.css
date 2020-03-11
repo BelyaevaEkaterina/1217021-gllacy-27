@@ -70,11 +70,10 @@ a {
   padding-bottom:6px;
   margin:0px;
   border-radius:30px;
-  background-color: #ffffff;
- 
+  background-color: #ffffff; 
  }
 
- .site-navigation-item:hover a,
+.site-navigation-item:hover a,
 .site-navigation-item:focus a{
   color: #323232;
 }
@@ -105,11 +104,22 @@ a {
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);  
   border-radius:5px;  
+  position:relative;
+  z-index: 10;
 }
 
- .sub-navigation-item a:hover{
-   background-color: #fbded8;   
+.active-sub-navigation-item{
+  background-color: #d07058;   
+}
+
+ .sub-navigation-item a:hover,
+ .sub-navigation-item a:focus{
+   background-color: #fbded7;   
  }
+
+ .sub-navigation-item a:active{
+  background-color: #f6b5a5;   
+} 
 
 .sub-navigation-item:first-child{  
   font-weight: 700; 
@@ -508,10 +518,23 @@ a {
 .catalog-item:hover{
   background: rgba(255, 255, 255, 0.2);
   background-blend-mode: overlay;    
+  z-index:10px;
 }
 
 .catalog-item .button{
-  visibility: hidden;
+  display:none;
+}
+
+.catalog-item:hover .button{
+  display:inline-block;
+}
+
+.catalog-item-button{
+  
+  width:200px;
+  min-height:44px;
+  margin-bottom:22px;
+  border-radius: ;
 }
 
 .about-us{
