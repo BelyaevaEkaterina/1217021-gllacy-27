@@ -825,9 +825,34 @@ a {
   border-radius:30px;
 }
 
-.full-basket a{
+.basket-form{
   color: #323232;
 }
+
+.basket-wrapper{
+  width:540px;
+  min-height: 189px;  
+  position:absolute;  
+}
+
+.basket-form{
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
+
+.basket-list{
+  display:flex;
+  flex-direction:column;
+}
+
+.basket-item{
+  display:flex;
+}
+
+.basket-item a{
+  width:215px;
+}
+
 
 .bread-crumbs{
   list-style: none;
