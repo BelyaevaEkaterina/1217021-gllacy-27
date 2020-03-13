@@ -833,26 +833,73 @@ a {
   width:540px;
   min-height: 189px;  
   position:absolute;  
+  right:0px;
+  top:37px;
+  z-index: 20;
 }
 
 .basket-form{
   background-color: #f8f7f4;
   border-radius: 5px;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .basket-list{
   display:flex;
   flex-direction:column;
+  paddint-top:11px;
 }
 
 .basket-item{
   display:flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top:20px;
+  margin-right:37px;
+  vertical-align: bottom;
+}
+
+.basket-item img{
+  align-self: baseline;
 }
 
 .basket-item a{
-  width:215px;
+  width:217px;
+  color:#323232;
+  
 }
 
+.delete-item{
+  width:16px;
+  height:16px;
+  border: 0;
+
+  cursor: pointer;
+  
+  position: absolute;
+  top:28px;
+  left:10px;
+}
+
+.delete-item::before,
+.delete-item::after {
+  content: "";
+
+  position: absolute;
+
+  width: 16px;
+  height: 1px;
+  background-color: #323232;
+}
+
+.delete-item::before {
+  transform: rotate(45deg);
+}
+
+.delete-item::after {
+  transform: rotate(-45deg);
+}
 
 .bread-crumbs{
   list-style: none;
