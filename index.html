@@ -230,20 +230,18 @@
       </div>
     </footer> 
     </div>
-    <form class = "hidden-elements" action="https://echo.htmlacademy.ru" method="post">
-      <p>Мы обязательно вам ответим!</p>
+    <form class="feedback-form-wrapper" action="https://echo.htmlacademy.ru" method="post">
+      <p class="feedback-form-title">Мы обязательно вам ответим!</p>
+      <button class="delete-button delete-form-button" type="button"><span class="visually-hidden">Закрыть</span></button>
       <label for="user-name" class="visually-hidden">Логин</label>
-      <input id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+      <input class="email-field" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
       <label for="user-email" class="visually-hidden">E-mail</label>
-      <input id="user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">   
+      <input class="email-field" id="user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">   
       <label for="comment-field" class="visually-hidden">Текст сообщения</label>
-      <textarea id="comment-field" name="comment" rows="5">В свободной форме</textarea> 
-      <button type="submit">
+      <textarea class="feedback-comment" id="comment-field" name="comment" rows="5" placeholder="В свободной форме"></textarea> 
+      <button class="button feedback-button" type="submit">
         Отправить
-      </button>     
-      <button type="button">
-        Закрыть
-      </button>   
+      </button>         
     </form>     
   </body>  
 </html>
