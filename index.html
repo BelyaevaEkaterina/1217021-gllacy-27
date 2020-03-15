@@ -81,7 +81,7 @@
     <main>           
       <div class="container">
         <h1 class = "visually-hidden">Магазин мороженого «Глейси»</h1>                 
-      <div class="slider visually-hidden"> 
+      <div class="slider"> 
         <div class="slider-controls">
           <label for="product-1">Первый</label>
           <label for="product-2">Второй</label>
@@ -102,53 +102,60 @@
           </li>          
         </ul>                      
       </div>
-      <ul class = "special-offers visually-hidden">
+      <ul class = "special-offers">
         <li class = "special-offer special-offer-raspberries">
           <h2 class="special-offer-title">Малинка даром!</h2>            
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class = "button" href="">Хочу варенье!</a>
+          <p class ="special-offer-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class = "button special-offer-button" href="">Хочу варенье!</a>
         </li>
         <li class = "special-offer special-offer-chocolate">
           <h2 class="special-offer-title">Шоколадки даром!</h2>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class = "button" href="">Хочу шоколадки!</a>
+          <p class ="special-offer-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class = "button special-offer-button" href="">Хочу шоколадки!</a>
         </li>  
       </ul>
-      <ul class="catalog-list visually-hidden">
+      </div>
+      <div class = "catalog-container hit-catalog-container">
+      <ul class="catalog-list">
         <li class="catalog-item">
             <a href="">
-                <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное мороженое с яроко выраженным апельсиновым вкусом">
-                <img src = "img/hit.svg" alt = "Хит">
-                <h2 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>    
-                <strong>310 ₽/кг</strong>        
-            </a>             
+                <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное мороженое с яроко выраженным апельсиновым вкусом">               
+                <strong class="price-of-item">310₽<span>/кг</span></strong> 
+                <h2 class="catalog-item-title">Сливочное с апельсиновым<br>джемом и цитрусовой стружкой</h2>      
+                <img class="hit-catalog-item" src = "img/hit.svg" alt = "Хит">                   
+            </a>               
+            <button class = "button catalog-item-button">Быстрый просмотр</button>          
         </li>
         <li class="catalog-item">
             <a href="">
                 <img src="img/product-2.jpg" width="267" height="267" alt="Сливочное мороженое с кофейным вкусом, посыпанное тёртым шоколадом">
-                <img src = "img/hit.svg" alt = "Хит">
-                <h2 class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</h2>
-                <strong>380 ₽/кг</strong>
-            </a>            
+                <strong class="price-of-item">380₽<span>/кг</span></strong> 
+                <h2 class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</h2>   
+                <img class="hit-catalog-item" src = "img/hit.svg" alt = "Хит">              
+            </a>   
+            <button class = "button catalog-item-button">Быстрый просмотр</button>           
         </li>
         <li class="catalog-item">
             <a href="">
                 <img src="img/product-3.jpg" width="267" height="267" alt="Сливочное мороженое с клубничным вкусом  розового цвета с белой посыпкой в виде сердечек">
-                <img src = "img/hit.svg" alt = "Хит">
-                <h2 class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</h2>
-                <strong>355 ₽/кг</strong>
-            </a>            
+                <strong class="price-of-item">355₽<span>/кг</span></strong>  
+                <h2 class="catalog-item-title">Сливочно-клубничное с<br>присыпкой из белого шоколада</h2> 
+                <img class="hit-catalog-item" src = "img/hit.svg" alt = "Хит"> 
+            </a>    
+            <button class = "button catalog-item-button">Быстрый просмотр</button>          
         </li>
         <li class="catalog-item">
             <a href="">
                 <img src="img/product-4.jpg" width="267" height="267" alt="Мороженое крем-брюле, смешанное с карамельной подливкой и посыпанное карамелью">
-                <img src = "img/hit.svg" alt = "Хит">
+                <strong class="price-of-item">415₽<span>/кг</span></strong> 
                 <h2 class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</h2>
-                <strong>415 ₽/кг</strong>
-            </a>            
+                <img class="hit-catalog-item" src = "img/hit.svg" alt = "Хит"> 
+            </a>   
+            <button class = "button catalog-item-button">Быстрый просмотр</button>           
         </li>
       </ul>  
-      
+      </div>
+      <div class = "container">
       <section class = "about-us">
         <h2 class="about-us-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>  
         <ul class="about-us-advantages">
@@ -178,16 +185,16 @@
         </div>
       </div>
     </div>
-      <section class = "contacts visually-hidden">
+      <section class = "contacts">
         <h2 class = "visually-hidden">Расположение - как добраться</h2>
         <img class="map" src = "img/map.jpg" alt = "Карта с адресом магазина Санкт-Петербург, ул. Большая Конюшенная 19/8">   
         <div class="contacts-sidebar">         
-        <p>Адрес главного офиса и офлайн-магазина:<br>
-        <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-        <p>Для заказов по телефону:<br>
-        <a href="tel:+78124502515">8 812 450-25-25</a><br>
-        (с 10 до 20 ежедневно)</p>
-        <button class = "button">Форма обратной связи</button>     
+          <p>Адрес главного офиса<br>и офлайн-магазина:<br>
+          <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+          <p>Для заказов по телефону:<br>
+          <a href="tel:+78124502515">8 812 450-25-25</a><br>
+          (с 10 до 20 ежедневно)</p>
+          <button class = "button contacts-sidebar-button">Форма обратной связи</button>     
         </div>    
       </section>
     </main>
@@ -230,7 +237,7 @@
       </div>
     </footer> 
     </div>
-    <form class="feedback-form-wrapper" action="https://echo.htmlacademy.ru" method="post">
+    <form class="feedback-form-wrapper visually-hidden" action="https://echo.htmlacademy.ru" method="post">
       <p class="feedback-form-title">Мы обязательно вам ответим!</p>
       <button class="delete-button delete-form-button" type="button"><span class="visually-hidden">Закрыть</span></button>
       <label for="user-name" class="visually-hidden">Логин</label>
