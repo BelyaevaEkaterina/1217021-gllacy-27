@@ -132,20 +132,24 @@
             </fieldset>
             <fieldset>                            
                 <legend class = "name-of-filter">Жирность:</legend>
-                <div class = "fat">
-                <label>
-                    <input type="radio" name="fat" value="0" checked hidden> 0%
-                </label>
-                <label>
-                    <input type="radio" name="fat" value="10" hidden> до 10%              
-                </label>
-                <label>
-                    <input type="radio" name="fat" value="30" hidden> до 30%              
-                </label>
-                <label>
-                    <input type="radio" name="fat" value="more" hidden> выше 30%              
-                </label>
-                </div>
+                <ul class = "fat">
+                    <li>
+                        <input type="radio" name="fat" id="fat0" value="0" checked hidden>
+                        <label for="fat0">0%</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="fat" id="fat10" value="10" hidden>   
+                        <label for="fat10">до 10%</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="fat" id="fat30" value="30" hidden>
+                        <label for="fat30">до 30%  </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="fat" id="more" value="more" hidden disabled>
+                        <label for="more">выше 30% </label>
+                    </li>
+                </ul>
             </fieldset>
             <fieldset>
                 <legend class = "name-of-filter">Наполнители:</legend>
@@ -159,7 +163,7 @@
                         Шоколадные
                     </label>
                     <label class="option">
-                        <input class="check-input" type="checkbox" name="filler2" id="shugar">
+                        <input class="check-input" type="checkbox" name="filler2" id="shugar" disabled>
                         <svg  class="check-box" viewBox="0 0 23 23">
                             <path  fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
                             <path class="check-square" fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>    
