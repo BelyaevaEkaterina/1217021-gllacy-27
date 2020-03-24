@@ -1175,6 +1175,7 @@ a {
   padding:8px 32px 8px 16px;
   border-radius: 30px;
   text-transform: lowercase;
+  border:none;
 }
 
 .sorting:hover,
