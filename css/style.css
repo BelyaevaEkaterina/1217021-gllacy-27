@@ -1220,6 +1220,10 @@ a {
   position: relative;
 }
 
+select::-ms-expand {
+  display: none;
+}
+
 .select svg {
   position: absolute;
   right: 16px;
@@ -1234,10 +1238,12 @@ a {
   fill:#323232;  
 }
 
-select {  
+.sorting {  
   -webkit-appearance: none;
   -moz-appearance: none;
+  -o-appearance: none;
   appearance: none;
+  outline: none;
 }
 
 .price {
