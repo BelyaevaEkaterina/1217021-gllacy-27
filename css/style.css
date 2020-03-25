@@ -1709,7 +1709,6 @@ margin-top: 4px;
 
 .pagination-list::before {
   content: "";
-
   position: relative;
   top: 8px;
   right: 0px;
